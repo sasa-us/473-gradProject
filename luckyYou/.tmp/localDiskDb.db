@@ -1,0 +1,69 @@
+{
+  "data": {
+    "user": [
+      {
+        "name": "Sha Lu",
+        "title": "test",
+        "email": "mxz9102@hotmail.com",
+        "encryptedPassword": "$2a$10$C9f7OKFbFJHAM/TRnA7SDeeelOFib3EI87yBzSQ0jalP9q.7GoNxq",
+        "lastLoggedIn": "2016-04-26T03:52:17.998Z",
+        "gravatarUrl": "http://www.gravatar.com/avatar/847b009ac0f0895989c308edf207098d?",
+        "createdAt": "2016-04-26T03:52:18.021Z",
+        "updatedAt": "2016-04-26T03:52:18.021Z",
+        "id": 1
+      },
+      {
+        "name": "Sha Lu",
+        "title": "test",
+        "email": "xiwangz@hotmail.com",
+        "encryptedPassword": "$2a$10$2FJIQIB01GVV/YGetnrmGuAcsj63K70v3zzUjS.s/o/ldjkyjeZLC",
+        "lastLoggedIn": "2016-04-26T03:57:11.496Z",
+        "gravatarUrl": "http://www.gravatar.com/avatar/c3d98da0ab6ac029087ea8c6c577fb52?",
+        "createdAt": "2016-04-26T03:57:11.498Z",
+        "updatedAt": "2016-04-26T03:57:11.498Z",
+        "id": 2
+      }
+    ]
+  },
+  "schema": {
+    "user": {
+      "name": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "encryptedPassword": {
+        "type": "string"
+      },
+      "lastLoggedIn": {
+        "type": "date",
+        "defaultsTo": "1970-01-01T00:00:00.000Z"
+      },
+      "gravatarUrl": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "user": {
+      "id": 2
+    }
+  }
+}
